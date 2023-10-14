@@ -11,7 +11,7 @@ interface Props {
 function NavBar({onSearch}:Props) {
   return (
     <HStack justifyContent={"space-between"} padding="10px">
-      <Image src={logo} boxSize="60px"></Image>
+      <Image src={logo} boxSize="60px" borderRadius={50}></Image>
       <Text whiteSpace={"nowrap"}>BsBs Games</Text>
       <SearchInput onSearch={onSearch}></SearchInput>
       <ColorModeSwitch></ColorModeSwitch>
